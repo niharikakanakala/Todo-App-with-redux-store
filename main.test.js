@@ -15,7 +15,7 @@ describe('Counter', () => {
       const CounterEl = screen.getByTestId('counter');
       expect(CounterEl).toBeInTheDocument;
   
-      // соответствует ли счетчик кол-ву незавершенных тудушек
+      //does the counter correspond to the number of unfinished tasks
       const amountOfUndoneTodos = getState().toDo.reduce((acc, curr) => {
         curr.isDone === false && acc++
         return acc
@@ -30,23 +30,23 @@ describe('Counter', () => {
       const getState = store.getState;
       const formEl = screen.getByRole('form');
       const inputEl = screen.getByRole('textbox')
-      // проверка рендеринга
+      // rendering check
       expect(formEl).toBeInTheDocument;
       expect(inputEl).toBeInTheDocument;
-      // проверка изначального стейта редакс
+      // check initial state redux
       expect(getState().toDo.length).toBe(1)
       expect(getState().toDo[0].value).toBe('initial ToDo')
   
-      // печатает название туду в инпуте...
+      // prints the title there in the input...
       userEvent.type(inputEl, 'my new test todo');
       expect(inputEl.value).toBe('my new test todo');
   
-      // сабмит по Enter и добавление нового туду в список
+      // submit by Enter and adding a new tudo to the list
       userEvent.keyboard('{enter}');
-      // проверка нового туду в сторе
+      // checking the new todo in the store
       expect(getState().toDo.length).toBe(2);
       expect(getState().toDo[1].value).toBe('my new test todo');
-      // обнуление input.value
+      // nulling input.value
       expect(inputEl.value).toBe('');
     })
   })
@@ -61,10 +61,9 @@ describe('Counter', () => {
       expect(ButtonEl).toBeInTheDocument;
       expect(FormEl).toBeInTheDocument;
   
-      // переключает все тудушки в статус "выполнены"
       userEvent.click(ButtonEl);
       getState().toDo.forEach(el => el.isDone === true);
-      // переключает все тудушки в статус "не выполнены"
+
       userEvent.click(ButtonEl);
       getState().toDo.forEach(el => el.isDone === false);
     })
@@ -89,6 +88,7 @@ describe('Counter', () => {
       expect(BtnAll.classList.length).not.toBe(0);
     })
   
+   
     test('filter todos: show Active', () => {
       const { store } = renderWithRedux(<Filters />);
       const getState = store.getState;
@@ -109,6 +109,7 @@ describe('Counter', () => {
       expect(BtnActive.classList.length).not.toBe(0);
     })
   
+    
     test('filter todos: show completed', () => {
       const { store } = renderWithRedux(<Filters />);
       const getState = store.getState;
@@ -128,17 +129,18 @@ describe('Counter', () => {
       // checking that a styling class has been added to an element
       expect(BtnCompleted.classList.length).not.toBe(0);
     })
+  
+  
     test('filter todos: delete completed', () => {
       const { store } = renderWithRedux(<Filters />);
       const getState = store.getState;
       const BtnDeleteCompleted = within(screen.getByTestId('deleteCompleted')).getByRole('button');
       expect(BtnDeleteCompleted).toBeInTheDocument;
   
-      // клик по кнопке "удалить завершенные"
       userEvent.click(BtnDeleteCompleted);
-      // проверка, что все завершенные удалены из стора
+    
       getState().toDo.forEach(el => expect(el.isDone).toBeFalsy());
-      // проверка, что все элементы отображаются на экране
+  
       getState().toDo.forEach(el => expect(el.isDisplay).toBeTruthy());
     })
   })
