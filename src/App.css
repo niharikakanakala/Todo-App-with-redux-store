@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #4B0082, #FF00FF, #FF00FF,#4B0082);
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+body {
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  background:  #FF00FF;
+  color: 	#4B0082;
+  min-width: 230px;
+  max-width: 550px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.app {
+  background: white;
+  margin: 130px 0 40px 0;
+  position: relative;
+  box-shadow: 0 2px 4px 0 pink,
+    0 25px 50px 0 #4B0082
+}
+
+.app input::input-placeholder {
+  font-style: italic;
+  font-weight: 300;
+  color: #DDA0DD;
+}
