@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #4B0082, #FF00FF, #FF00FF,#4B0082);
+  background: linear-gradient(to right, #4B0082, #FF00FF,white,white,white,white,#FF00FF,#4B0082);
 }
 
 button {
@@ -20,7 +20,7 @@ button {
 body {
   font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.4em;
-  background:  #FF00FF;
+  background:  white;
   color: 	#4B0082;
   min-width: 230px;
   max-width: 550px;

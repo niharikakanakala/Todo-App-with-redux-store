@@ -13,6 +13,7 @@ const Form_Sty = styled.form `
 const New_Todo = styled.input `
     margin: 0;
     width: 100%;
+    color: #DDA0DD;
     font-size: 24px;
     border: 0;
     outline: none;
@@ -31,12 +32,16 @@ function Input() {
       onSubmit={(e) => {
         e.preventDefault()
         const newToDoPayload = inputRef.current.value
-        // update store in case of not empty input
-        if (newToDoPayload !== '') {
-          dispatch(addNewToDo(newToDoPayload))
+          
+          //Complete the onSubmit function
+          //check initial state redux
+          // update store in case of not empty input
+       
+          //Prints the title that is entered as input..
+          //After submitting, it should add as a new to-do to the list
+          
           // clear input after that
-          inputRef.current.value = ''
-        }
+
 
       }}
     >

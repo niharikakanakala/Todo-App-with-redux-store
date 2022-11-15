@@ -15,7 +15,6 @@ describe('Counter', () => {
       const CounterEl = screen.getByTestId('counter');
       expect(CounterEl).toBeInTheDocument;
   
-      //does the counter correspond to the number of unfinished tasks
       const amountOfUndoneTodos = getState().toDo.reduce((acc, curr) => {
         curr.isDone === false && acc++
         return acc
@@ -78,13 +77,10 @@ describe('Counter', () => {
       const BtnAll = within(screen.getByTestId('all')).getByRole('button');
       expect(BtnAll).toBeInTheDocument;
   
-      // click on the "show all" button
       userEvent.click(BtnAll);
-      // checking the filter in the store
+      
       expect(getState().filterToDo.currentStatus).toBe('all');
-      // checking the state that all todos are displayed
       getState().toDo.forEach(el => expect(el.isDisplay).toBeTruthy());
-      // checking that a styling class has been added to an element
       expect(BtnAll.classList.length).not.toBe(0);
     })
   
@@ -116,17 +112,17 @@ describe('Counter', () => {
       const BtnCompleted = within(screen.getByTestId('completed')).getByRole('button');
       expect(BtnCompleted).toBeInTheDocument;
   
-      // click on the button "show only completed
+      
       userEvent.click(BtnCompleted);
-      // checking the filter in the store
+      
       expect(getState().filterToDo.currentStatus).toBe('completed');
-      // checking the state that only completed ones are displayed
+      
       getState().toDo.forEach(el => {
         el.isDone
           ? expect(el.isDisplay).toBeTruthy()                                                                                                                                                   
           : expect(el.isDisplay).toBeFalsy();'-'
       });
-      // checking that a styling class has been added to an element
+     
       expect(BtnCompleted.classList.length).not.toBe(0);
     })
   

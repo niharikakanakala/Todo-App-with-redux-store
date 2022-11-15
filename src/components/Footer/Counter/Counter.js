@@ -13,8 +13,8 @@ const Todo_Count = styled.span `
 
 function Counter() {
   const toDosLeft = useSelector((state) => state[LSNAME_TODO].reduce((acc, curr) => {
-    curr.isDone === false && acc++
-    return acc
+    // Complete the counter function
+    //It should show the number of undone to-do's
   }, 0))
 
   return (

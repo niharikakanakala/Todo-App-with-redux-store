@@ -5,12 +5,10 @@ import { LSNAME_TODO } from '../../../../constants/constants';
 
 export const deleteToDoReducer = (state, action) => {
   const { id, deleteCompleted = false } = action.payload
-  // delete all completed ToDos or current toDo
-  let updState;
-  deleteCompleted
-    ? updState = [...state].filter((el) => !el.isDone)
-    : updState = [...state].filter((el) => el.id !== id)
-  // save to localStorage arr of todos
+  
+  //complete the reducer to 
+  // delete all completed ToDos 
+  
   manageLocalStorage(LSNAME_TODO, 'set', updState)
   return updState
 }

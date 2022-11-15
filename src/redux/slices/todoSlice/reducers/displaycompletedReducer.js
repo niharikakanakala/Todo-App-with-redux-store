@@ -4,15 +4,14 @@ import { manageLocalStorage } from '../../../../utils/manageLocalStorage';
 import { LSNAME_TODO } from '../../../../constants/constants';
 
 export const displayCompletedReducer = (state, action) => {
-  const updState = [...state].map((el) => {
-    if (el.isDone) {
-      el.isDisplay = true
-    } else {
-      el.isDisplay = false
-    }
-    return el
-  })
+
+
+  //Complete the reducer
+  //store the reducer in const `update
+  //Check the state that all completed todos are displayed
+
+
 
   manageLocalStorage(LSNAME_TODO, 'set', updState)
-  // return updState
 }
+

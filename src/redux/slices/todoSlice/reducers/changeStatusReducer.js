@@ -8,31 +8,24 @@ export const changeStatusReducer = (state, action) => {
   let updState;
   switch (changeAll) {
     case false:
-      // change status of a current single ToDo
       updState = [...state].map((el) => {
         if (el.id === id) el.isDone = !el.isDone
         return el
       })
       break
     case true:
-      // change statuses of all ToDos
+      
       const checkStatuses = state.every((el) => el.isDone === true)
-      checkStatuses
-        ? updState = [...state].map((el) => {
-          el.isDone = false
-          return el
-        })
-        : updState = [...state].map((el) => {
-          el.isDone = true
-          return el
-        })
+     
+      //Change the status of all to-do's
+      // Using if-else condition check whether checkStatuses are true or false i.e., todo's are done or not
+
       break
     default:
       updState = state
   }
 
-  // upd localStorage
+  
   manageLocalStorage(LSNAME_TODO, 'set', updState)
-  // immer error so dont return
-  //return updState
+  
 }

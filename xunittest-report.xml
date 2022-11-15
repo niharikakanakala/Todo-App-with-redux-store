@@ -1,19 +1,419 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="7" failures="0" errors="0" time="1.837">
-  <testsuite name="main.test.js" errors="0" failures="0" skipped="0" timestamp="2022-11-08T06:05:42" time="1.361" tests="7">
-    <testcase classname="Counter" name="count amount of undone todos" time="0.023">
+<testsuites name="jest tests" tests="7" failures="7" errors="0" time="2.561">
+  <testsuite name="main.test.js" errors="0" failures="7" skipped="0" timestamp="2022-11-15T20:10:56" time="1.752" tests="7">
+    <testcase classname="Counter" name="count amount of undone todos" time="0.028">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 1
+Received: 0
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:22:45)
+    at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Input" name="create and add new ToDo" time="0.115">
+    <testcase classname="Input" name="create and add new ToDo" time="0.126">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 2
+Received: 1
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:46:38)
+    at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Header" name="click on button toggle all todos status" time="0.06">
+    <testcase classname="Header" name="click on button toggle all todos status" time="0.252">
+      <failure>Error: unset third parameter: data is required with set action
+    at manageLocalStorage (/Users/niharikakanakala/Desktop/capstone/src/utils/manageLocalStorage.js:5:42)
+    at changeStatusReducer (/Users/niharikakanakala/Desktop/capstone/src/redux/slices/todoSlice/reducers/changeStatusReducer.js:29:21)
+    at recipe (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:281:20)
+    at Immer.produce (/Users/niharikakanakala/Desktop/capstone/node_modules/immer/src/core/immerClass.ts:94:14)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:280:18
+    at Array.reduce (&lt;anonymous&gt;)
+    at reducer (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:247:25)
+    at reducer (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createSlice.ts:335:14)
+    at combination (/Users/niharikakanakala/Desktop/capstone/node_modules/redux/lib/redux.js:568:29)
+    at dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/redux/lib/redux.js:296:22)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/serializableStateInvariantMiddleware.ts:171:20
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/redux-thunk/lib/index.js:27:16
+    at dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/immutableStateInvariantMiddleware.ts:253:32)
+    at handleToggleAllBtn (/Users/niharikakanakala/Desktop/capstone/src/components/Header/Header.js:60:5)
+    at HTMLUnknownElement.callCallback (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+    at innerInvokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+    at invokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+    at HTMLUnknownElementImpl._dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+    at HTMLUnknownElementImpl.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+    at HTMLUnknownElement.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+    at Object.invokeGuardedCallbackDev (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4213:16)
+    at invokeGuardedCallback (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4277:31)
+    at invokeGuardedCallbackAndCatchFirstError (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4291:25)
+    at executeDispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9041:3)
+    at processDispatchQueueItemsInOrder (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9073:7)
+    at processDispatchQueue (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9086:5)
+    at dispatchEventsForPlugins (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9097:3)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9288:12
+    at batchedUpdates$1 (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:26140:12)
+    at batchedUpdates (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:3991:12)
+    at dispatchEventForPluginEventSystem (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9287:3)
+    at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:6465:5)
+    at dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:6457:5)
+    at dispatchDiscreteEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:6430:5)
+    at HTMLDivElement.callTheUserObjectsOperation (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+    at innerInvokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+    at invokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+    at HTMLButtonElementImpl._dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+    at HTMLButtonElementImpl.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+    at HTMLButtonElement.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/dom/dist/events.js:25:20
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/pure.js:79:16
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/act-compat.js:64:24
+    at act (/Users/niharikakanakala/Desktop/capstone/node_modules/react/cjs/react.development.js:2512:16)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/act-compat.js:63:25
+    at Object.eventWrapper (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/pure.js:78:28)
+    at fireEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/dom/dist/events.js:16:35)
+    at Function.fireEvent.&lt;computed&gt; [as click] (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/dom/dist/events.js:125:36)
+    at fireClick (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:150:20)
+    at clickElement (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:91:5)
+    at Object.click (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:140:5)
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:63:17)
+    at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+      <failure>Error: unset third parameter: data is required with set action
+    at manageLocalStorage (/Users/niharikakanakala/Desktop/capstone/src/utils/manageLocalStorage.js:5:42)
+    at changeStatusReducer (/Users/niharikakanakala/Desktop/capstone/src/redux/slices/todoSlice/reducers/changeStatusReducer.js:29:21)
+    at recipe (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:281:20)
+    at Immer.produce (/Users/niharikakanakala/Desktop/capstone/node_modules/immer/src/core/immerClass.ts:94:14)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:280:18
+    at Array.reduce (&lt;anonymous&gt;)
+    at reducer (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:247:25)
+    at reducer (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createSlice.ts:335:14)
+    at combination (/Users/niharikakanakala/Desktop/capstone/node_modules/redux/lib/redux.js:568:29)
+    at dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/redux/lib/redux.js:296:22)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/serializableStateInvariantMiddleware.ts:171:20
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/redux-thunk/lib/index.js:27:16
+    at dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/immutableStateInvariantMiddleware.ts:253:32)
+    at handleToggleAllBtn (/Users/niharikakanakala/Desktop/capstone/src/components/Header/Header.js:60:5)
+    at HTMLUnknownElement.callCallback (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+    at innerInvokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+    at invokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+    at HTMLUnknownElementImpl._dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+    at HTMLUnknownElementImpl.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+    at HTMLUnknownElement.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+    at Object.invokeGuardedCallbackDev (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4213:16)
+    at invokeGuardedCallback (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4277:31)
+    at invokeGuardedCallbackAndCatchFirstError (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4291:25)
+    at executeDispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9041:3)
+    at processDispatchQueueItemsInOrder (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9073:7)
+    at processDispatchQueue (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9086:5)
+    at dispatchEventsForPlugins (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9097:3)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9288:12
+    at batchedUpdates$1 (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:26140:12)
+    at batchedUpdates (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:3991:12)
+    at dispatchEventForPluginEventSystem (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9287:3)
+    at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:6465:5)
+    at dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:6457:5)
+    at dispatchDiscreteEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:6430:5)
+    at HTMLDivElement.callTheUserObjectsOperation (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+    at innerInvokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+    at invokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+    at HTMLButtonElementImpl._dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+    at HTMLButtonElementImpl.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+    at HTMLButtonElement.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/dom/dist/events.js:25:20
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/pure.js:79:16
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/act-compat.js:64:24
+    at act (/Users/niharikakanakala/Desktop/capstone/node_modules/react/cjs/react.development.js:2512:16)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/act-compat.js:63:25
+    at Object.eventWrapper (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/pure.js:78:28)
+    at fireEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/dom/dist/events.js:16:35)
+    at Function.fireEvent.&lt;computed&gt; [as click] (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/dom/dist/events.js:125:36)
+    at fireClick (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:150:20)
+    at clickElement (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:91:5)
+    at Object.click (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:140:5)
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:66:17)
+    at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Filters" name="filter todos: show All" time="0.044">
+    <testcase classname="Filters" name="filter todos: show All" time="0.085">
+      <failure>ReferenceError: updState is not defined
+    at displayAllReducer (/Users/niharikakanakala/Desktop/capstone/src/redux/slices/todoSlice/reducers/displayAllReducer.js:12:42)
+    at recipe (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:281:20)
+    at Immer.produce (/Users/niharikakanakala/Desktop/capstone/node_modules/immer/src/core/immerClass.ts:94:14)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:280:18
+    at Array.reduce (&lt;anonymous&gt;)
+    at reducer (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:247:25)
+    at reducer (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createSlice.ts:335:14)
+    at combination (/Users/niharikakanakala/Desktop/capstone/node_modules/redux/lib/redux.js:568:29)
+    at dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/redux/lib/redux.js:296:22)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/serializableStateInvariantMiddleware.ts:171:20
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/redux-thunk/lib/index.js:27:16
+    at dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/immutableStateInvariantMiddleware.ts:253:32)
+    at handleDisplayAll (/Users/niharikakanakala/Desktop/capstone/src/components/Footer/Filters/Filters.js:68:5)
+    at HTMLUnknownElement.callCallback (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+    at innerInvokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+    at invokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+    at HTMLUnknownElementImpl._dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+    at HTMLUnknownElementImpl.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+    at HTMLUnknownElement.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+    at Object.invokeGuardedCallbackDev (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4213:16)
+    at invokeGuardedCallback (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4277:31)
+    at invokeGuardedCallbackAndCatchFirstError (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4291:25)
+    at executeDispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9041:3)
+    at processDispatchQueueItemsInOrder (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9073:7)
+    at processDispatchQueue (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9086:5)
+    at dispatchEventsForPlugins (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9097:3)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9288:12
+    at batchedUpdates$1 (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:26140:12)
+    at batchedUpdates (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:3991:12)
+    at dispatchEventForPluginEventSystem (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9287:3)
+    at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:6465:5)
+    at dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:6457:5)
+    at dispatchDiscreteEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:6430:5)
+    at HTMLDivElement.callTheUserObjectsOperation (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+    at innerInvokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+    at invokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+    at HTMLButtonElementImpl._dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+    at HTMLButtonElementImpl.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+    at HTMLButtonElement.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/dom/dist/events.js:25:20
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/pure.js:79:16
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/act-compat.js:64:24
+    at act (/Users/niharikakanakala/Desktop/capstone/node_modules/react/cjs/react.development.js:2512:16)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/act-compat.js:63:25
+    at Object.eventWrapper (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/pure.js:78:28)
+    at fireEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/dom/dist/events.js:16:35)
+    at Function.fireEvent.&lt;computed&gt; [as click] (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/dom/dist/events.js:125:36)
+    at fireClick (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:150:20)
+    at clickElement (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:91:5)
+    at Object.click (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:140:5)
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:80:17)
+    at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Filters" name="filter todos: show Active" time="0.028">
+    <testcase classname="Filters" name="filter todos: show Active" time="0.044">
+      <failure>ReferenceError: updState is not defined
+    at displayActiveReducer (/Users/niharikakanakala/Desktop/capstone/src/redux/slices/todoSlice/reducers/displayActiveReducer.js:15:42)
+    at recipe (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:281:20)
+    at Immer.produce (/Users/niharikakanakala/Desktop/capstone/node_modules/immer/src/core/immerClass.ts:94:14)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:280:18
+    at Array.reduce (&lt;anonymous&gt;)
+    at reducer (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:247:25)
+    at reducer (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createSlice.ts:335:14)
+    at combination (/Users/niharikakanakala/Desktop/capstone/node_modules/redux/lib/redux.js:568:29)
+    at dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/redux/lib/redux.js:296:22)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/serializableStateInvariantMiddleware.ts:171:20
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/redux-thunk/lib/index.js:27:16
+    at dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/immutableStateInvariantMiddleware.ts:253:32)
+    at handleDisplayActive (/Users/niharikakanakala/Desktop/capstone/src/components/Footer/Filters/Filters.js:72:5)
+    at HTMLUnknownElement.callCallback (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+    at innerInvokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+    at invokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+    at HTMLUnknownElementImpl._dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+    at HTMLUnknownElementImpl.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+    at HTMLUnknownElement.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+    at Object.invokeGuardedCallbackDev (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4213:16)
+    at invokeGuardedCallback (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4277:31)
+    at invokeGuardedCallbackAndCatchFirstError (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4291:25)
+    at executeDispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9041:3)
+    at processDispatchQueueItemsInOrder (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9073:7)
+    at processDispatchQueue (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9086:5)
+    at dispatchEventsForPlugins (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9097:3)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9288:12
+    at batchedUpdates$1 (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:26140:12)
+    at batchedUpdates (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:3991:12)
+    at dispatchEventForPluginEventSystem (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9287:3)
+    at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:6465:5)
+    at dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:6457:5)
+    at dispatchDiscreteEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:6430:5)
+    at HTMLDivElement.callTheUserObjectsOperation (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+    at innerInvokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+    at invokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+    at HTMLButtonElementImpl._dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+    at HTMLButtonElementImpl.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+    at HTMLButtonElement.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/dom/dist/events.js:25:20
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/pure.js:79:16
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/act-compat.js:64:24
+    at act (/Users/niharikakanakala/Desktop/capstone/node_modules/react/cjs/react.development.js:2512:16)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/act-compat.js:63:25
+    at Object.eventWrapper (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/pure.js:78:28)
+    at fireEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/dom/dist/events.js:16:35)
+    at Function.fireEvent.&lt;computed&gt; [as click] (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/dom/dist/events.js:125:36)
+    at fireClick (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:150:20)
+    at clickElement (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:91:5)
+    at Object.click (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:140:5)
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:95:17)
+    at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;active&quot;
+Received: &quot;all&quot;
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:97:51)
+    at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Filters" name="filter todos: show completed" time="0.024">
+    <testcase classname="Filters" name="filter todos: show completed" time="0.048">
+      <failure>ReferenceError: updState is not defined
+    at displayCompletedReducer (/Users/niharikakanakala/Desktop/capstone/src/redux/slices/todoSlice/reducers/displaycompletedReducer.js:15:42)
+    at recipe (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:281:20)
+    at Immer.produce (/Users/niharikakanakala/Desktop/capstone/node_modules/immer/src/core/immerClass.ts:94:14)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:280:18
+    at Array.reduce (&lt;anonymous&gt;)
+    at reducer (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:247:25)
+    at reducer (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createSlice.ts:335:14)
+    at combination (/Users/niharikakanakala/Desktop/capstone/node_modules/redux/lib/redux.js:568:29)
+    at dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/redux/lib/redux.js:296:22)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/serializableStateInvariantMiddleware.ts:171:20
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/redux-thunk/lib/index.js:27:16
+    at dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/immutableStateInvariantMiddleware.ts:253:32)
+    at handleDisplayCompleted (/Users/niharikakanakala/Desktop/capstone/src/components/Footer/Filters/Filters.js:76:5)
+    at HTMLUnknownElement.callCallback (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+    at innerInvokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+    at invokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+    at HTMLUnknownElementImpl._dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+    at HTMLUnknownElementImpl.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+    at HTMLUnknownElement.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+    at Object.invokeGuardedCallbackDev (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4213:16)
+    at invokeGuardedCallback (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4277:31)
+    at invokeGuardedCallbackAndCatchFirstError (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4291:25)
+    at executeDispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9041:3)
+    at processDispatchQueueItemsInOrder (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9073:7)
+    at processDispatchQueue (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9086:5)
+    at dispatchEventsForPlugins (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9097:3)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9288:12
+    at batchedUpdates$1 (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:26140:12)
+    at batchedUpdates (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:3991:12)
+    at dispatchEventForPluginEventSystem (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9287:3)
+    at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:6465:5)
+    at dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:6457:5)
+    at dispatchDiscreteEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:6430:5)
+    at HTMLDivElement.callTheUserObjectsOperation (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+    at innerInvokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+    at invokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+    at HTMLButtonElementImpl._dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+    at HTMLButtonElementImpl.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+    at HTMLButtonElement.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/dom/dist/events.js:25:20
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/pure.js:79:16
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/act-compat.js:64:24
+    at act (/Users/niharikakanakala/Desktop/capstone/node_modules/react/cjs/react.development.js:2512:16)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/act-compat.js:63:25
+    at Object.eventWrapper (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/pure.js:78:28)
+    at fireEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/dom/dist/events.js:16:35)
+    at Function.fireEvent.&lt;computed&gt; [as click] (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/dom/dist/events.js:125:36)
+    at fireClick (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:150:20)
+    at clickElement (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:91:5)
+    at Object.click (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:140:5)
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:116:17)
+    at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;completed&quot;
+Received: &quot;all&quot;
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:118:51)
+    at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Filters" name="filter todos: delete completed" time="0.022">
+    <testcase classname="Filters" name="filter todos: delete completed" time="0.033">
+      <failure>ReferenceError: updState is not defined
+    at deleteToDoReducer (/Users/niharikakanakala/Desktop/capstone/src/redux/slices/todoSlice/reducers/deleteTodoReducer.js:12:42)
+    at recipe (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:281:20)
+    at Immer.produce (/Users/niharikakanakala/Desktop/capstone/node_modules/immer/src/core/immerClass.ts:94:14)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:280:18
+    at Array.reduce (&lt;anonymous&gt;)
+    at reducer (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:247:25)
+    at reducer (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createSlice.ts:335:14)
+    at combination (/Users/niharikakanakala/Desktop/capstone/node_modules/redux/lib/redux.js:568:29)
+    at dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/redux/lib/redux.js:296:22)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/serializableStateInvariantMiddleware.ts:171:20
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/redux-thunk/lib/index.js:27:16
+    at dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/immutableStateInvariantMiddleware.ts:253:32)
+    at handleDeleteAll (/Users/niharikakanakala/Desktop/capstone/src/components/Footer/Filters/Filters.js:79:33)
+    at HTMLUnknownElement.callCallback (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4164:14)
+    at HTMLUnknownElement.callTheUserObjectsOperation (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+    at innerInvokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+    at invokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+    at HTMLUnknownElementImpl._dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+    at HTMLUnknownElementImpl.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+    at HTMLUnknownElement.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+    at Object.invokeGuardedCallbackDev (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4213:16)
+    at invokeGuardedCallback (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4277:31)
+    at invokeGuardedCallbackAndCatchFirstError (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:4291:25)
+    at executeDispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9041:3)
+    at processDispatchQueueItemsInOrder (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9073:7)
+    at processDispatchQueue (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9086:5)
+    at dispatchEventsForPlugins (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9097:3)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9288:12
+    at batchedUpdates$1 (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:26140:12)
+    at batchedUpdates (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:3991:12)
+    at dispatchEventForPluginEventSystem (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:9287:3)
+    at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:6465:5)
+    at dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:6457:5)
+    at dispatchDiscreteEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/react-dom/cjs/react-dom.development.js:6430:5)
+    at HTMLDivElement.callTheUserObjectsOperation (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+    at innerInvokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+    at invokeEventListeners (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+    at HTMLButtonElementImpl._dispatch (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+    at HTMLButtonElementImpl.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+    at HTMLButtonElement.dispatchEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/dom/dist/events.js:25:20
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/pure.js:79:16
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/act-compat.js:64:24
+    at act (/Users/niharikakanakala/Desktop/capstone/node_modules/react/cjs/react.development.js:2512:16)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/act-compat.js:63:25
+    at Object.eventWrapper (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/react/dist/pure.js:78:28)
+    at fireEvent (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/dom/dist/events.js:16:35)
+    at Function.fireEvent.&lt;computed&gt; [as click] (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/dom/dist/events.js:125:36)
+    at fireClick (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:150:20)
+    at clickElement (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:91:5)
+    at Object.click (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:140:5)
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:136:17)
+    at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
   </testsuite>
 </testsuites>
