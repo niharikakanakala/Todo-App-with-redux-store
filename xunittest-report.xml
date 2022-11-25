@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="7" failures="7" errors="0" time="2.561">
-  <testsuite name="main.test.js" errors="0" failures="7" skipped="0" timestamp="2022-11-15T20:10:56" time="1.752" tests="7">
-    <testcase classname="Counter" name="count amount of undone todos" time="0.028">
+<testsuites name="jest tests" tests="7" failures="7" errors="0" time="3.065">
+  <testsuite name="main.test.js" errors="0" failures="7" skipped="0" timestamp="2022-11-25T08:41:53" time="2.39" tests="7">
+    <testcase classname="Counter" name="count amount of undone todos" time="0.027">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
 Expected: 1
@@ -14,7 +14,7 @@ Received: 0
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
     at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Input" name="create and add new ToDo" time="0.126">
+    <testcase classname="Input" name="create and add new ToDo" time="0.109">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
 Expected: 2
@@ -27,7 +27,7 @@ Received: 1
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
     at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Header" name="click on button toggle all todos status" time="0.252">
+    <testcase classname="Header" name="click on button toggle all todos status" time="0.218">
       <failure>Error: unset third parameter: data is required with set action
     at manageLocalStorage (/Users/niharikakanakala/Desktop/capstone/src/utils/manageLocalStorage.js:5:42)
     at changeStatusReducer (/Users/niharikakanakala/Desktop/capstone/src/redux/slices/todoSlice/reducers/changeStatusReducer.js:29:21)
@@ -149,7 +149,7 @@ Received: 1
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
     at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Filters" name="filter todos: show All" time="0.085">
+    <testcase classname="Filters" name="filter todos: show All" time="0.07">
       <failure>ReferenceError: updState is not defined
     at displayAllReducer (/Users/niharikakanakala/Desktop/capstone/src/redux/slices/todoSlice/reducers/displayAllReducer.js:12:42)
     at recipe (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:281:20)
@@ -210,7 +210,7 @@ Received: 1
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
     at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Filters" name="filter todos: show Active" time="0.044">
+    <testcase classname="Filters" name="filter todos: show Active" time="0.042">
       <failure>ReferenceError: updState is not defined
     at displayActiveReducer (/Users/niharikakanakala/Desktop/capstone/src/redux/slices/todoSlice/reducers/displayActiveReducer.js:15:42)
     at recipe (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:281:20)
@@ -282,7 +282,7 @@ Received: &quot;all&quot;
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
     at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Filters" name="filter todos: show completed" time="0.048">
+    <testcase classname="Filters" name="filter todos: show completed" time="0.045">
       <failure>ReferenceError: updState is not defined
     at displayCompletedReducer (/Users/niharikakanakala/Desktop/capstone/src/redux/slices/todoSlice/reducers/displaycompletedReducer.js:15:42)
     at recipe (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:281:20)
@@ -354,7 +354,7 @@ Received: &quot;all&quot;
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
     at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Filters" name="filter todos: delete completed" time="0.033">
+    <testcase classname="Filters" name="filter todos: delete completed" time="0.042">
       <failure>ReferenceError: updState is not defined
     at deleteToDoReducer (/Users/niharikakanakala/Desktop/capstone/src/redux/slices/todoSlice/reducers/deleteTodoReducer.js:12:42)
     at recipe (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:281:20)
