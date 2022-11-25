@@ -3,7 +3,7 @@ import React from 'react';
 import Input from '../Input/Input';
 // redux
 import { useDispatch } from 'react-redux';
-import { changeStatus } from '../../redux/slices/toDoSlice/toDoSlice';
+import { changeStatus } from '../../redux/slices/todoSlice/todoSlice';
 // constants
 import { HEADER_TEXT } from '../../constants/constants';
 import styled from 'styled-components';
