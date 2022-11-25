@@ -2,7 +2,7 @@
 import React, { createRef, useState } from 'react';
 // redux
 import { useDispatch } from 'react-redux';
-import { addNewToDo } from '../../redux/slices/toDoSlice/toDoSlice';
+import { addNewToDo } from '../../redux/slices/todoSlice/todoSlice';
 // constants
 import { INPUT_PLACEHOLDER } from '../../constants/constants';
 import styled from 'styled-components';

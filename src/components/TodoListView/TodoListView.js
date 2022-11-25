@@ -1,7 +1,7 @@
 
 import React from 'react';
 // components
-import ToDoItem from './ToDoItem/ToDoItem';
+import ToDoItem from "./TodoItem/TodoItem";
 // redux
 import { useSelector } from 'react-redux';
 // other

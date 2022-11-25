@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 // redux
 import { useSelector, useDispatch } from 'react-redux';
-import { deleteToDo } from '../../../redux/slices/toDoSlice/toDoSlice';
-import { displayAll, displayActive, displayCompleted } from '../../../redux/slices/toDoSlice/toDoSlice';
+import { deleteToDo } from '../../../redux/slices/todoSlice/todoSlice';
+import { displayAll, displayActive, displayCompleted } from '../../../redux/slices/todoSlice/todoSlice';
 import { setFilterStatus } from '../../../redux/slices/filterSlice/filterSlice';
 // constants
 import {
