@@ -28,19 +28,15 @@ describe('Counter', () => {
       const { store } = renderWithRedux(<Input />)
       const getState = store.getState;
       const formEl = screen.getByRole('form');
-      const inputEl = screen.getByRole('textbox')
-      // rendering check
+      const inputEl = screen.getByRole('textbox');
       expect(formEl).toBeInTheDocument;
       expect(inputEl).toBeInTheDocument;
-      // check initial state redux
       expect(getState().toDo.length).toBe(1)
       expect(getState().toDo[0].value).toBe('initial ToDo')
-  
-      // prints the title there in the input...
+
       userEvent.type(inputEl, 'my new test todo');
       expect(inputEl.value).toBe('my new test todo');
   
-      // submit by Enter and adding a new tudo to the list
       userEvent.keyboard('{enter}');
       // checking the new todo in the store
       expect(getState().toDo.length).toBe(2);

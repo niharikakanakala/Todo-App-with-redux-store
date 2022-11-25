@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="7" failures="7" errors="0" time="2.312">
-  <testsuite name="main.test.js" errors="0" failures="7" skipped="0" timestamp="2022-11-25T09:02:58" time="1.597" tests="7">
-    <testcase classname="Counter" name="count amount of undone todos" time="0.026">
+<testsuites name="jest tests" tests="7" failures="7" errors="0" time="2.497">
+  <testsuite name="main.test.js" errors="0" failures="7" skipped="0" timestamp="2022-11-25T09:08:31" time="1.722" tests="7">
+    <testcase classname="Counter" name="count amount of undone todos" time="0.028">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
 Expected: 1
@@ -14,12 +14,12 @@ Received: 0
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
     at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Input" name="create and add new ToDo" time="0.104">
+    <testcase classname="Input" name="create and add new ToDo" time="0.118">
       <failure>Error: expect(received).toBe(expected) // Object.is equality
 
 Expected: 2
 Received: 1
-    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:46:38)
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:42:38)
     at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
     at new Promise (&lt;anonymous&gt;)
@@ -27,7 +27,7 @@ Received: 1
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
     at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Header" name="click on button toggle all todos status" time="0.221">
+    <testcase classname="Header" name="click on button toggle all todos status" time="0.274">
       <failure>Error: unset third parameter: data is required with set action
     at manageLocalStorage (/Users/niharikakanakala/Desktop/capstone/src/utils/manageLocalStorage.js:5:42)
     at changeStatusReducer (/Users/niharikakanakala/Desktop/capstone/src/redux/slices/todoSlice/reducers/changeStatusReducer.js:29:21)
@@ -81,7 +81,7 @@ Received: 1
     at fireClick (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:150:20)
     at clickElement (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:91:5)
     at Object.click (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:140:5)
-    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:63:17)
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:59:17)
     at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
     at new Promise (&lt;anonymous&gt;)
@@ -141,7 +141,7 @@ Received: 1
     at fireClick (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:150:20)
     at clickElement (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:91:5)
     at Object.click (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:140:5)
-    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:66:17)
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:62:17)
     at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
     at new Promise (&lt;anonymous&gt;)
@@ -149,7 +149,7 @@ Received: 1
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
     at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Filters" name="filter todos: show All" time="0.066">
+    <testcase classname="Filters" name="filter todos: show All" time="0.069">
       <failure>ReferenceError: updState is not defined
     at displayAllReducer (/Users/niharikakanakala/Desktop/capstone/src/redux/slices/todoSlice/reducers/displayAllReducer.js:12:42)
     at recipe (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:281:20)
@@ -202,7 +202,7 @@ Received: 1
     at fireClick (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:150:20)
     at clickElement (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:91:5)
     at Object.click (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:140:5)
-    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:80:17)
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:76:17)
     at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
     at new Promise (&lt;anonymous&gt;)
@@ -210,7 +210,7 @@ Received: 1
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
     at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Filters" name="filter todos: show Active" time="0.032">
+    <testcase classname="Filters" name="filter todos: show Active" time="0.035">
       <failure>ReferenceError: updState is not defined
     at displayActiveReducer (/Users/niharikakanakala/Desktop/capstone/src/redux/slices/todoSlice/reducers/displayActiveReducer.js:15:42)
     at recipe (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:281:20)
@@ -263,7 +263,7 @@ Received: 1
     at fireClick (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:150:20)
     at clickElement (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:91:5)
     at Object.click (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:140:5)
-    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:95:17)
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:91:17)
     at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
     at new Promise (&lt;anonymous&gt;)
@@ -274,7 +274,7 @@ Received: 1
 
 Expected: &quot;active&quot;
 Received: &quot;all&quot;
-    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:97:51)
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:93:51)
     at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
     at new Promise (&lt;anonymous&gt;)
@@ -282,7 +282,7 @@ Received: &quot;all&quot;
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
     at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Filters" name="filter todos: show completed" time="0.033">
+    <testcase classname="Filters" name="filter todos: show completed" time="0.036">
       <failure>ReferenceError: updState is not defined
     at displayCompletedReducer (/Users/niharikakanakala/Desktop/capstone/src/redux/slices/todoSlice/reducers/displaycompletedReducer.js:15:42)
     at recipe (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:281:20)
@@ -335,7 +335,7 @@ Received: &quot;all&quot;
     at fireClick (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:150:20)
     at clickElement (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:91:5)
     at Object.click (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:140:5)
-    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:116:17)
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:112:17)
     at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
     at new Promise (&lt;anonymous&gt;)
@@ -346,7 +346,7 @@ Received: &quot;all&quot;
 
 Expected: &quot;completed&quot;
 Received: &quot;all&quot;
-    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:118:51)
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:114:51)
     at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
     at new Promise (&lt;anonymous&gt;)
@@ -354,7 +354,7 @@ Received: &quot;all&quot;
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:75:41
     at processTicksAndRejections (internal/process/task_queues.js:95:5)</failure>
     </testcase>
-    <testcase classname="Filters" name="filter todos: delete completed" time="0.027">
+    <testcase classname="Filters" name="filter todos: delete completed" time="0.025">
       <failure>ReferenceError: updState is not defined
     at deleteToDoReducer (/Users/niharikakanakala/Desktop/capstone/src/redux/slices/todoSlice/reducers/deleteTodoReducer.js:12:42)
     at recipe (/Users/niharikakanakala/Desktop/capstone/node_modules/@reduxjs/toolkit/src/createReducer.ts:281:20)
@@ -407,7 +407,7 @@ Received: &quot;all&quot;
     at fireClick (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:150:20)
     at clickElement (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:91:5)
     at Object.click (/Users/niharikakanakala/Desktop/capstone/node_modules/@testing-library/user-event/dist/click.js:140:5)
-    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:136:17)
+    at Object.&lt;anonymous&gt; (/Users/niharikakanakala/Desktop/capstone/main.test.js:132:17)
     at Object.asyncJestTest (/Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
     at /Users/niharikakanakala/Desktop/capstone/node_modules/jest/node_modules/jest-jasmine2/build/queueRunner.js:45:12
     at new Promise (&lt;anonymous&gt;)
