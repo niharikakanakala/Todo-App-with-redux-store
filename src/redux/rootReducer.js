@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { configureStore } from "@reduxjs/toolkit";
 // reducers
-import sliceToDoReducer from './slices/toDoSlice/toDoSlice';
+import sliceToDoReducer from './slices/todoSlice/todoSlice';
 import sliceFilterReducer from './slices/filterSlice/filterSlice';
 // constants
 import { LSNAME_TODO, LSNAME_FILTER } from "../constants/constants";

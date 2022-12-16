@@ -4,7 +4,7 @@ import styles from './ToDoItem.css';
 import classNames from 'classnames/bind';
 
 import { useDispatch } from 'react-redux';
-import { changeStatus, deleteToDo, changeValue, changeEditingMode } from '../../../redux/slices/todoSlice/todoSlice';
+import { changeStatus, deleteTodo, changeValue, changeEditingMode } from '../../../redux/slices/todoSlice/todoSlice';
 
 import { EDIT_INPUT_ID, SUMBIT_KEYCODE } from '../../../constants/constants';
 
@@ -15,7 +15,7 @@ function ToDoItem({ toDo }) {
   const dispatch = useDispatch()
 
   const handleCheckBox = () => dispatch(changeStatus({ id }))
-  const handleDelete = () => dispatch(deleteToDo({ id }))
+  const handleDelete = () => dispatch(deleteTodo({ id }))
   const handleDoubleClick = () => dispatch(changeEditingMode({ id }))
   const handleChangeValue = (e) => {
    

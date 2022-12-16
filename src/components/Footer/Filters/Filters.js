@@ -3,8 +3,10 @@ import styled from 'styled-components';
 
 // redux
 import { useSelector, useDispatch } from 'react-redux';
-import { deleteToDo } from '../../../redux/slices/todoSlice/todoSlice';
-import { displayAll, displayActive, displayCompleted } from '../../../redux/slices/todoSlice/todoSlice';
+import { deleteTodoReducer } from '../../../redux/slices/todoSlice/reducers/deleteTodoReducer';
+import { displayAllReducer } from '../../../redux/slices/todoSlice/reducers/displayAllReducer';
+import { displayActiveReducer } from '../../../redux/slices/todoSlice/reducers/displayActiveReducer';
+import { displayCompletedReducer } from '../../../redux/slices/todoSlice/reducers/displaycompletedReducer';
 import { setFilterStatus } from '../../../redux/slices/filterSlice/filterSlice';
 // constants
 import {
@@ -65,18 +67,18 @@ function Filters() {
   const filterStatus = useSelector(state => state[LSNAME_FILTER].currentStatus)
 
   const handleDisplayAll = () => {
-    dispatch(displayAll())
+    dispatch(displayAllReducer())
     dispatch(setFilterStatus(FILTERSTATUS_ALL))
   }
   const handleDisplayActive = () => {
-    dispatch(displayActive())
+    dispatch(displayActiveReducer())
     dispatch(setFilterStatus(FILTERSTATUS_ACTIVE))
   }
   const handleDisplayCompleted = () => {
-    dispatch(displayCompleted())
+    dispatch(displayCompletedReducer())
     dispatch(setFilterStatus(FILTERSTATUS_COMPLETED))
   }
-  const handleDeleteAll = () => dispatch(deleteToDo({ deleteCompleted: true }))
+  const handleDeleteAll = () => dispatch(deleteTodoReducer({ deleteCompleted: true }))
 
   return (
     <UnorderedList>

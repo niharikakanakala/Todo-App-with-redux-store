@@ -3,7 +3,7 @@ import React from 'react';
 import Input from '../Input/Input';
 // redux
 import { useDispatch } from 'react-redux';
-import { changeStatus } from '../../redux/slices/toDoSlice/toDoSlice';
+import { changeStatusReducer } from '../../redux/slices/todoSlice/reducers/changeStatusReducer';
 // constants
 import { HEADER_TEXT } from '../../constants/constants';
 import styled from 'styled-components';
@@ -57,7 +57,7 @@ const Header = () => {
   const dispatch = useDispatch()
 
   function handleToggleAllBtn() {
-    dispatch(changeStatus({ changeAll: true }))
+    dispatch(changeStatusReducer({ changeAll: true }))
   }
 
   return (
