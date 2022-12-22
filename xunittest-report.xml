@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="7" failures="0" errors="0" time="1.915">
-  <testsuite name="main.test.js" errors="0" failures="0" skipped="0" timestamp="2022-11-25T09:00:11" time="1.445" tests="7">
-    <testcase classname="Counter" name="count amount of undone todos" time="0.028">
+<testsuites name="jest tests" tests="7" failures="0" errors="0" time="1.834">
+  <testsuite name="main.test.js" errors="0" failures="0" skipped="0" timestamp="2022-12-22T18:19:29" time="1.326" tests="7">
+    <testcase classname="Counter" name="count amount of undone todos" time="0.024">
     </testcase>
-    <testcase classname="Input" name="create and add new ToDo" time="0.126">
+    <testcase classname="Input" name="create and add new ToDo" time="0.127">
     </testcase>
-    <testcase classname="Header" name="click on button toggle all todos status" time="0.059">
+    <testcase classname="Header" name="click on button toggle all todos status" time="0.063">
     </testcase>
-    <testcase classname="Filters" name="filter todos: show All" time="0.043">
+    <testcase classname="Filters" name="filter todos: show All" time="0.045">
     </testcase>
-    <testcase classname="Filters" name="filter todos: show Active" time="0.035">
+    <testcase classname="Filters" name="filter todos: show Active" time="0.031">
     </testcase>
-    <testcase classname="Filters" name="filter todos: show completed" time="0.02">
+    <testcase classname="Filters" name="filter todos: show completed" time="0.023">
     </testcase>
-    <testcase classname="Filters" name="filter todos: delete completed" time="0.017">
+    <testcase classname="Filters" name="filter todos: delete completed" time="0.014">
     </testcase>
   </testsuite>
 </testsuites>
